@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/54c2f9bc68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+
+    <title>DEMO</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>ORE MARREROS</h1>
+                <P>Desarrollador web</P>
+            </div>
+            <div class="form">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" value="Buscar">
+            </div>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Empresas</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Paisajes</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </div>
+        <section class="grid" id="grid">
+            <div class="item" data-categoria="paisajes" 
+                data-etiquetas="lagos montañas nieve sol"
+                data-descripcion="Lago del norte">
+                <div class="item-contenido">
+                    <img src="imag/paisajes.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="empresas" 
+                data-etiquetas="lagos edificios torres calles"
+                data-descripcion="Ciudad">
+                <div class="item-contenido">
+                    <img src="imag/edificios.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="empresas" 
+                data-etiquetas="edificios calles parques postes torreones"
+                data-descripcion="Empresas">
+                <div class="item-contenido">
+                    <img src="imag/empresas.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="ciudades" data-etiquetas="edificios calles puentes postes autovias"
+                data-descripcion="Ciudad Giorgia">
+                <div class="item-contenido">
+                    <img src="imag/gior.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="personas" data-etiquetas="edificios mesas boligrafos sillas ventanas"
+                data-descripcion="Negocios">
+                <div class="item-contenido">
+                    <img src="imag/personas.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="personas" data-etiquetas="casco obras hierros postes guantes botas"
+                data-descripcion="Obras">
+                <div class="item-contenido">
+                    <img src="imag/obras.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="paisajes" data-etiquetas="barcos mar cielo neblina"
+                data-descripcion="Barcos">
+                <div class="item-contenido">
+                    <img src="imag/barcos.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="ciudades" data-etiquetas="edificios calles parques postes coches puentes"
+                data-descripcion="Alemania">
+                <div class="item-contenido">
+                    <img src="imag/coches.gif" alt="">
+                </div>
+            </div>
+            <div class="item" data-categoria="animales" data-etiquetas="campo pasto ciervo venados mamifero cuernos neblina"
+                data-descripcion="Ciervo Americano">
+                <div class="item-contenido">
+                    <img src="imag/animales.gif" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="overlay" id="overlay">
+            <div class="container-img">
+                <button id="btn-cerrar-popup"><i class="fa-solid fa-square-xmark"></i></button>
+                <img src="" alt="" >
+            </div>
+            <p class="descripcion"></p>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
